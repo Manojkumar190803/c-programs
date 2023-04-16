@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    int long long x,a,b;
+    scanf("%lld",&x);
+    a=x/3+x/5;
+    b=a-x/15;
+    printf("%lld",b);
+}
