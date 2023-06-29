@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 100;
+    int sum = 0;
+    int n_sum = n*(n+1)/2;
+    int m_num;
+    int lst[n-1];
+    for (int i=0; i<n-1; i++) {
+        cin>>lst[i];
+        sum+=lst[i];
+    }
+    m_num=n_sum-sum;
+    cout<<m_num<<endl;
+    return 0;
+}
