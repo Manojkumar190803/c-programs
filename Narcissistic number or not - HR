@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n,t,r,p=0,s=0;
+    cin>>n;t=n;
+    while(t){
+        p++;
+        t=t/10;
+    }
+    t=n;
+    while (t) {
+        r= t%10;
+        s+=pow(r,p);
+        t=t/10;
+    }
+    if (s==n) {
+        cout <<"Yes\n";
+    } else {
+        cout<<"No\n";
+    }
+    return 0;
+}
